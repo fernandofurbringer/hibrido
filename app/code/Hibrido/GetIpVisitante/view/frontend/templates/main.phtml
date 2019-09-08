@@ -4,4 +4,6 @@ $ipNoLog = $this->getVisitanteIP();
 echo $this->getText().$ipNoLog;
 
 echo "<script>console.log('aqui o ip: $ipNoLog')</script>";
+
+file_put_contents( "LogIP.txt", $ipNoLog."\n", FILE_APPEND );
 ?>

@@ -9,7 +9,7 @@ class GetIpVisitante extends \Magento\Framework\View\Element\Template {
         return "Seu IP: ";
     }
 
-    function getVisitanteIP()
+    public function getVisitanteIP()
     {
         $client  = @$_SERVER['HTTP_CLIENT_IP'];
         $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
@@ -30,5 +30,6 @@ class GetIpVisitante extends \Magento\Framework\View\Element\Template {
 
         return $ip;
     }
+
 
 }
