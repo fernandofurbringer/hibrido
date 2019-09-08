@@ -1,0 +1,7 @@
+<h1>CAPTURANDO O IP DO VISITANTE</h1>
+<?php
+$ipNoLog = $this->getVisitanteIP();
+echo $this->getText().$ipNoLog;
+
+echo "<script>console.log('aqui o ip: $ipNoLog')</script>";
+?>
