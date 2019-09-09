@@ -20,6 +20,7 @@
     </VirtualHost>
     
 4 - Lembrar de adicionar as seguintes linhas no arquivo /etc/hosts
+
     127.0.0.1 localhost.com
     127.0.0.1 dev.com
     127.0.0.1 m2.com
