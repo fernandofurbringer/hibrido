@@ -1,9 +1,14 @@
 <h1>CAPTURANDO O IP DO VISITANTE</h1>
 <?php
+
+$hora = date('H:i:s');
+
 $ipNoLog = $this->getVisitanteIP();
-echo $this->getText().$ipNoLog;
+
+echo $hora." ".$this->getText() . $ipNoLog;
 
 echo "<script>console.log('aqui o ip: $ipNoLog')</script>";
 
-file_put_contents( "LogIP.txt", $ipNoLog."\n", FILE_APPEND );
+file_put_contents("logip.txt", $hora." Ip gravado: ".$ipNoLog . "\n", FILE_APPEND);
+
 ?>
