@@ -41,5 +41,23 @@ ex.: http://localhost.com/getipvisitante
 
 **O arquivo de Log é gerado no diretório Raiz do ssitema com o nome de LogIP.txt, salvando apenas o IP do visitante conforme solicitado**
 
+Obs.: para não ficar abrindo a pagina em cache eu tive que remover as opções de cache como uma solução rapida, para voltar a utilizar o cache só adicionar dentro do arquivo env.php localizado em <<magento project>>/app/etc:
+    'cache_types' => [
+        'config' => 1,
+        'layout' => 1,
+        'block_html' => 1,
+        'collections' => 1,
+        'reflection' => 1,
+        'db_ddl' => 1,
+        'compiled_config' => 1,
+        'eav' => 1,
+        'customer_notification' => 1,
+        'config_integration' => 1,
+        'config_integration_api' => 1,
+        'full_page' => 1,
+        'config_webservice' => 1,
+        'translate' => 1
+    ],
+
     
     
