@@ -38,6 +38,7 @@
 ex.: http://localhost.com/getipvisitante
 
 11 - Comandos talvez nescessários para funcionamento do modulo:
+
     sudo bin/magento module:enable -c Hibrido_GetIpVisitante
     sudo bin/magento cache:flush
     sudo bin/magento setup:upgrade
@@ -50,6 +51,7 @@ ex.: http://localhost.com/getipvisitante
 **O arquivo de Log é gerado no diretório Raiz do ssitema com o nome de logip.txt**
 
 Obs.: para não ficar abrindo a pagina em cache eu tive que remover as opções de cache como uma solução rapida, para voltar a utilizar o cache só adicionar dentro do arquivo env.php localizado em <<magento project>>/app/etc:
+    
     'cache_types' => [
         'config' => 1,
         'layout' => 1,
