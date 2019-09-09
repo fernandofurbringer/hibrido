@@ -37,9 +37,17 @@
 10 - acesse o modulo com o <link>/getipvisitante
 ex.: http://localhost.com/getipvisitante
 
+11 - Comandos talvez nescessários para funcionamento do modulo:
+    sudo bin/magento module:enable -c Hibrido_GetIpVisitante
+    sudo bin/magento cache:flush
+    sudo bin/magento setup:upgrade
+    sudo bin/magento setup:di:compile
+    sudo a2enmod rewrite
+    sudo bin/magento indexer:reindex
+
 **essa é pagina criada com um titulo e conteudo aleatório mantendo o template**
 
-**O arquivo de Log é gerado no diretório Raiz do ssitema com o nome de LogIP.txt, salvando apenas o IP do visitante conforme solicitado**
+**O arquivo de Log é gerado no diretório Raiz do ssitema com o nome de logip.txt**
 
 Obs.: para não ficar abrindo a pagina em cache eu tive que remover as opções de cache como uma solução rapida, para voltar a utilizar o cache só adicionar dentro do arquivo env.php localizado em <<magento project>>/app/etc:
     'cache_types' => [
